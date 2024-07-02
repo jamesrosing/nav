@@ -17,20 +17,16 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
-"use client"
+"use client";
 
-import React from "react"
-
-import { useEffect } from 'react'
-import { useSwipeable } from 'react-swipeable'
-
+import React from "react";
 
 export function Main() {
   return (
     <div className="w-full h-screen overflow-auto scroll-smooth">
       <section className="w-full h-screen relative">
         <div className="absolute inset-0 z-0">
-          <video src="./components/media/video/video1.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+          <video src="/components/media/video/video1.mp4" autoPlay loop muted className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
           <h1 className="text-4xl font-bold mb-4">Welcome</h1>
@@ -40,7 +36,7 @@ export function Main() {
       </section>
       <section className="w-full h-screen relative">
         <div className="absolute inset-0 z-0">
-          <img src="/placeholder.svg" alt="Background Image" fill className="object-cover" />
+          <img src="/placeholder.svg" alt="Background Image" className="object-cover" />
         </div>
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Discover Our Products</h2>
@@ -52,10 +48,10 @@ export function Main() {
         <div className="absolute inset-0 z-0">
           <div className="grid grid-cols-2 gap-4 h-full">
             <div className="relative">
-              <img src="/placeholder.svg" alt="Background Image" fill className="object-cover" />
+              <img src="/placeholder.svg" alt="Background Image" className="object-cover" />
             </div>
             <div className="relative">
-              <video src="/video2.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+              <video src="/components/media/video/video2.mp4" autoPlay loop muted className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -76,13 +72,13 @@ export function Main() {
         <div className="absolute inset-0 z-0">
           <div className="grid grid-cols-3 gap-4 h-full">
             <div className="relative">
-              <img src="/placeholder.svg" alt="Background Image" fill className="object-cover" />
+              <img src="/placeholder.svg" alt="Background Image" className="object-cover" />
             </div>
             <div className="relative">
-              <img src="/placeholder.svg" alt="Background Image" fill className="object-cover" />
+              <img src="/placeholder.svg" alt="Background Image" className="object-cover" />
             </div>
             <div className="relative">
-              <img src="/placeholder.svg" alt="Background Image" fill className="object-cover" />
+              <img src="/placeholder.svg" alt="Background Image" className="object-cover" />
             </div>
           </div>
         </div>
@@ -101,7 +97,7 @@ export function Main() {
       </section>
       <section className="w-full h-screen relative">
         <div className="absolute inset-0 z-0">
-          <video src="/video3.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+          <video src="/components/media/video/video3.mp4" autoPlay loop muted className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
@@ -110,6 +106,6 @@ export function Main() {
         </div>
       </section>
     </div>
-  )
+  );
 }
 export default Main;

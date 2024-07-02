@@ -4,8 +4,8 @@ import Main from "../components/ui/main";
 export default function Home() {
   return (
     <>
-    {/* <Nav /> */}
-    <Main />
+      <Nav />
+      <Main />
     </>
   );
 }

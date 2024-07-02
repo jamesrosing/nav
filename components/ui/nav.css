@@ -25,9 +25,7 @@
     --ring: 240 5.9% 10%;
     --radius: 0.5rem;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -39,11 +37,37 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
   }
+
   .font-body {
     @apply font-sans;
   }
+
   .font-heading {
     @apply font-sans;
+  }
+
+  .nav {
+    transition: background-color 0.3s ease;
+  }
+
+  .nav.bg-transparent {
+    background-color: transparent;
+  }
+
+  .nav.bg-black {
+    background-color: black;
+  }
+
+  .nav-header {
+    transition: background-color 0.3s ease;
+  }
+
+  .text-white {
+    color: white;
+  }
+
+  .text-black {
+    color: black;
   }
 }
 
