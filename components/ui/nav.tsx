@@ -6,9 +6,9 @@
 "use client"
 
 import React from "react"
-import '../ui/nav.css';
+import './nav.css';
 
-export function nav() {
+function Nav() {
   const [openMenu, setOpenMenu] = React.useState(null)
   const [aboutAeonOpen, setAboutAeonOpen] = React.useState(false)
   const [navOpen, setNavOpen] = React.useState(true)
@@ -74,13 +74,13 @@ export function nav() {
             {openMenu === 0 && (
               <div className="flex flex-col space-y-2 pl-4">
                 <div className="flex justify-between items-center py-4">
-                  <span>Sub 1</span>
+                  <span>Defined</span>
                 </div>
                 <div className="flex justify-between items-center py-4">
-                  <span>Sub 2</span>
+                  <span>Focus</span>
                 </div>
                 <div className="flex justify-between items-center py-4">
-                  <span>Sub 3</span>
+                  <span>Results</span>
                 </div>
               </div>
             )}
@@ -414,4 +414,4 @@ function PlusIcon(props) {
     </svg>
   )
 }
-export default nav;
+export default Nav;
