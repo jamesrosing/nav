@@ -17,6 +17,10 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
+"use client"
+
+import React from "react"
+
 import { useEffect } from 'react'
 import { useSwipeable } from 'react-swipeable'
 
@@ -26,7 +30,7 @@ export function Main() {
     <div className="w-full h-screen overflow-auto scroll-smooth">
       <section className="w-full h-screen relative">
         <div className="absolute inset-0 z-0">
-          <video src="/video1.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+          <video src="./components/media/video/video1.mp4" autoPlay loop muted className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
           <h1 className="text-4xl font-bold mb-4">Welcome</h1>
