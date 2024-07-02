@@ -26,17 +26,17 @@ export function Main() {
     <div className="w-full h-screen overflow-auto scroll-smooth">
       <section className="w-full h-screen relative">
         <div className="absolute inset-0 z-0">
-          <video src="/components/media/video/video1.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+          <video src="/media/video/video1.mp4" autoPlay loop muted className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
-          <h1 className="text-4xl font-bold mb-4">Welcome</h1>
-          <p className="text-lg mb-8">Explore</p>
+          <h1 className="text-4xl font-bold mb-4"></h1>
+          <p className="text-lg mb-8"></p>
           <div />
         </div>
       </section>
       <section className="w-full h-screen relative">
         <div className="absolute inset-0 z-0">
-          <img src="/placeholder.svg" alt="Background Image" className="object-cover" />
+          <img src="/media/image/placeholder.svg" alt="Background Image" className="object-cover" />
         </div>
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Discover Our Products</h2>
@@ -46,12 +46,22 @@ export function Main() {
       </section>
       <section className="w-full h-screen relative">
         <div className="absolute inset-0 z-0">
+          <video src="/media/video/video3.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+        </div>
+        <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
+          <h1 className="text-4xl font-bold mb-4">Emsculpt</h1>
+          <p className="text-lg mb-8">Newport Beach</p>
+          <div />
+        </div>
+      </section>
+      <section className="w-full h-screen relative">
+        <div className="absolute inset-0 z-0">
           <div className="grid grid-cols-2 gap-4 h-full">
             <div className="relative">
-              <img src="/placeholder.svg" alt="Background Image" className="object-cover" />
+              <img src="/media/image/placeholder.svg" alt="Background Image" className="object-cover" />
             </div>
             <div className="relative">
-              <video src="/components/media/video/video2.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+              <video src="/media/video/video2.mp4" autoPlay loop muted className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -72,13 +82,13 @@ export function Main() {
         <div className="absolute inset-0 z-0">
           <div className="grid grid-cols-3 gap-4 h-full">
             <div className="relative">
-              <img src="/placeholder.svg" alt="Background Image" className="object-cover" />
+              <img src="/media/image/placeholder.svg" alt="Background Image" className="object-cover" />
             </div>
             <div className="relative">
-              <img src="/placeholder.svg" alt="Background Image" className="object-cover" />
+              <img src="/media/image/placeholder.svg" alt="Background Image" className="object-cover" />
             </div>
             <div className="relative">
-              <img src="/placeholder.svg" alt="Background Image" className="object-cover" />
+              <img src="/media/image/placeholder.svg" alt="Background Image" className="object-cover" />
             </div>
           </div>
         </div>

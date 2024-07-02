@@ -52,8 +52,9 @@ function Nav() {
   };
 
   return (
-    <div className={`nav ${navOpen ? "bg-black text-white" : "bg-transparent text-black"} min-h-screen`}>
-      <header className="nav-header flex items-center justify-between p-8 border-b border-gray-700 relative">
+    
+    <div className={`nav ${navOpen ? "nav-open" : "nav-closed"}`}>
+      <header className={`nav-header ${navOpen ? "nav-header-open" : "nav-header-closed"} flex items-center justify-between p-8 border-b border-gray-700 absolute top-0 left-0 w-full`}>
         <div className="flex items-center space-x-2">
           <span className="text-lg font-bold">AEON</span>
         </div>
